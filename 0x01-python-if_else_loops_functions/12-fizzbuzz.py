@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 def fizzbuzz():
     i = 2
-    print("{}".format(1), end='')
+    print("{} ".format(1), end='')
     while i <= 100:
         if i % 5 == 0 and i % 3 == 0:
-            print(" FizzBuzz", end='')
+            print("FizzBuzz ", end='')
         elif i % 3 == 0:
-            print(" Fizz", end='')
+            print("Fizz ", end='')
         elif i % 5 == 0:
-            print(" Buzz", end='')
+            print("Buzz ", end='')
         else:
-            print(" {}".format(i), end='')
+            print("{} ".format(i), end='')
         i += 1
