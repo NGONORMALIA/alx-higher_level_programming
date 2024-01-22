@@ -8,5 +8,5 @@ def print_list_integer(my_list=[]):
     Returns:
         NULL
     """
-    for i in range(len(my_list)):
-        print("{}".format(my_list[i]))
+    for i in my_list:
+        print("{}".format(i))
