@@ -4,14 +4,11 @@ def safe_print_list(my_list=[], x=0):
         return (0)
     try:
         k = 0
-        for i in my_list:
-            if k == (x - 1):
+        while k < x:
+                print("{}".format(my_list[k]), end="")
                 k += 1
-                print(i)
-            elif k < x:
-                k += 1
-                print("{}".format(i), end="")
     except IndexError:
         print("")
         return k
+    print("")
     return k
