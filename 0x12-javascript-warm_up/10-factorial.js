@@ -1,11 +1,10 @@
 #!/usr/bin/node
-const arg1 = parseInt(process.argv[2]);
-let arg = 1;
-if (!(arg)) {
-  console.log(1);
-} else {
-  for (let count = 1; count <= arg1; count++) {
-    arg *= count;
+function factorial (a) {
+  if (a === 1 || isNaN(a)) {
+    return (1);
   }
-  console.log(arg);
+  return (a * factorial(a - 1));
 }
+
+const arg = Math.floor(Number(process.argv[2]));
+console.log(factorial(arg));
